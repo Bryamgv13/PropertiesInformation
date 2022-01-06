@@ -18,18 +18,7 @@ namespace PropertiesInformation.Domain.Tests
 
         public Property Build()
         {
-            Property property = new()
-            {
-                Name = na,
-                Address,
-                Price,
-                CodeInternal,
-                Year,
-                Owner,
-                OwnerId,
-                PropertyImages,
-                PropertyTraces
-            };
+            Property property = new Property(Name, Address, Price, CodeInternal, Year, Owner, OwnerId, PropertyImages, PropertyTraces);
             return property;
         }
 
